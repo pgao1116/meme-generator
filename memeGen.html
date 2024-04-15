@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html> 
+<head>
+  <title>Meme Generator</title>
+  <link rel="stylesheet" type="text/css" href="memeGen.css">
+</head>
+<body>
+  <h1>Meme Generator</h1>
+  <p id="instructions">
+    Instructions:
+    Enter the top and bottom text for your meme,
+     and the URL of the image you want to use.
+     Double click a meme to delete it.
+  </p>
+  <div id="submit">
+    <form action="" id="memeForm">
+      <div class="inputs">
+        <label for="topText" class="labels">Enter Top Text</label>
+        <input type="text" id="topText" placeholder="Top Text">
+      </div>
+     
+      <div class="inputs">
+        <label for="bottomText" class="labels">Enter Bottom Text</label>
+        <input type="text" id="bottomText" placeholder="Bottom Text">
+      </div>
+     
+      <div class="inputs">
+        <label for="link" class="labels">Enter Image URL</label>
+      <input type="url" id="link" placeholder="Link">
+      </div>
+      
+  
+      <button id="generate">Generate</button>
+  
+    </form>
+  </div>
+  
+<div class="memeContainer">
+</div>
+
+  <script src="memeGen.js"></script>
+</body>
+</html>
